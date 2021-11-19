@@ -1,39 +1,55 @@
-# Layer0 starter template
+# Deploy the CDN example to Layer0
 
-The starter template is the fastest way to enable the Layer0 Edge Network for your website. Take a second to review the following steps to get going.
+A demo deployment of the CDN example to Layer0.
 
-A full guide can be located at [docs.layer0.co](https://docs.layer0.co).
+<!-- ## Demo -->
 
-## Running your project
+<!-- https://layer0-docs-layer0-next-example-default.layer0.link/ -->
 
+## Try It Now
+
+[![Deploy with Layer0](https://docs.layer0.co/button.svg)](https://app.layer0.co/deploy?repo=https://github.com/layer0-docs/layer0-cdn-example)
+
+## Getting Started
+
+### Clone This Repo
+
+Use `git clone https://github.com/layer0-docs/layer0-cdn-example.git` to get the files within this repository onto your local machine.
+
+### Install dependencies
+
+On the command line, in the project root directory, run the following command:
+
+```bash
+npm install
 ```
-layer0 dev
+
+### Run the Next.js app locally on Layer0
+
+Run the Next.js app with the command:
+
+```bash
+npm run layer0:dev
 ```
 
-starts up your project. Make sure the origin domain is set up correctly to ensure content will appear.
+Load the site: http://127.0.0.1:3000
 
-## Updating site config
+### Testing production build locally with Layer0
 
-In `layer0.config.js` make sure that the origin site domain is correct. During development this can be the existing domain, but for a full launch you will want to update that to be a subdomain in order to point the top level domain to this project. Additional details are available in the [app.layer0.co](https://app.layer0.co) cockpit.
+You can do a production build of your app and test it locally using:
 
-## Updating routes
-
-In `src/routes`, you can add routes for your site. When a match occurs, it can then have the cache rules applied to it.
-
-In `src/route-handler` you can configure the caching behavior of those matched paths.
-
-## Deploy your project
-
-You can deploy the project at any point (even without changing items above) with a simple command
-
+```bash
+layer0 build && layer0 run --production
 ```
+
+Setting --production runs your app exactly as it will be uploaded to the Layer0 cloud using serverless-offline.
+
+## Deploying to Layer0
+
+Deploying requires an account on Layer0. [Sign up here for free](https://app.layer0.co/signup). Once you have an account, you can deploy to Layer0 by running the following in the root folder of your project:
+
+```bash
 layer0 deploy
 ```
 
-This command will provide a url to now view the site.
-
-## Getting help
-
-The Layer0 platform offers a lot of capabilities and possibilities. Reading the [docs](https://docs.layer0.co) will help realize the full potential of the platform and your site.
-
-Visit our [forums](https://forums.layer0.co) at any point to ask questions and get help from the Layer0 team members and the community.
+See [deploying](https://docs.layer0.co/guides/deploying) for more information.
