@@ -1,0 +1,20 @@
+{
+  "name": "cdn-starter-template",
+  "devDependencies": {
+    "@layer0/cli": "^4.2.3-next-1637272263-d46b7b091.0",
+    "@layer0/core": "^4.2.3-next-1637272263-d46b7b091.0",
+    "@layer0/devtools": "^4.2.3-next-1637272263-d46b7b091.0",
+    "@layer0/prefetch": "^4.2.3-next-1637272263-d46b7b091.0",
+    "@layer0/starter": "^4.2.3-next-1637272263-d46b7b091.0",
+    "@types/node": "^13.13.2",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.4"
+  },
+  "scripts": {
+    "start": "layer0 dev",
+    "build": "layer0 build",
+    "prod": "layer0 run --production",
+    "deploy": "npm run build && layer0 deploy --skip-build"
+  },
+  "dependencies": {}
+}
