@@ -24,9 +24,9 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
-      - name: Sapper Example - Deploy to Layer0
+      - name: CDN Example - Deploy to Layer0
         run: |
           npm ci
-          npm run layer0:deploy -- ${{'--branch=$BRANCH_NAME' || ''}} --token=$deploy_token --environment=default
+          npm run deploy -- ${{'--branch=$BRANCH_NAME' || ''}} --token=$deploy_token --environment=default
         env:
           deploy_token: ${{secrets.LAYER0_DEPLOY_TOKEN}}
