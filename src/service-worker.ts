@@ -7,29 +7,23 @@ clientsClaim()
 
 new Prefetcher({
   plugins: [
-    // Uncomment to enable
-    // new DeepFetchPlugin([
-    //   {
-    //     selector: 'img',
-    //     maxMatches: 2,
-    //     attribute: 'data-src',
-    //     as: 'image',
-    //     callback: deepFetchImages,
-    //   },
-    // ]),
+    new DeepFetchPlugin([
+      {
+        selector: 'rounded-image',
+        maxMatches: 1,
+        attribute: 'src',
+        as: 'image',
+        callback: deepFetchImages
+      },
+    ]),
   ],
 })
 .route()
-// Specific domain caching based on a regex match
-// .cache(/^https:\/\/assets-global\.website-files\.com\/.*/) 
+.cache(/^https:\/\/assets-global\.website-files\.com\/.*/) // Specific domain caching based on a regex match
 
 // Callback function image selector
 // Customize as needed
 function deepFetchImages({ $el }: DeepFetchCallbackParam) {
   const urlTemplate = $el.attr('src')
-  const width = "900"
-  if (urlTemplate) {
-    const url = urlTemplate.replace(/\{width\}/,width)
-    prefetch(url, 'image')
-  }
+  prefetch(url, 'image')
 }
