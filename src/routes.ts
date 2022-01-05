@@ -7,21 +7,21 @@ export default new Router()
   .use(starterRoutes)
 
   
-  // example routes for cacheable pages:
+  // example routes for cacheable pages
   .get('/', routeHandler)
-  .get('/collections/:path*', routeHandler)
-  .get('/products/:path*', routeHandler)
+  .get('/insights', routeHandler)
+  .get('/post/:path*', routeHandler)
   
-  // example route for cacheable assets:
-  .match('/images/:path*', ({ cache, proxy }) => {
-    cache(CACHE_ASSETS)
-    return proxy('origin')
-  })
+  // example route for cacheable assets
+  // .match('/images/:path*', ({ cache, proxy }) => {
+  //  cache(CACHE_ASSETS)
+  //  return proxy('origin')
+  // })
 
   // useful configs for generated outputs 
   .get('/service-worker.js', ({ cache, serviceWorker }) => {
-    cache(CACHE_ASSETS);
-    serviceWorker('dist/service-worker.js');
+    cache(CACHE_ASSETS)
+    serviceWorker('dist/service-worker.js')
   })
   .match('/main.js', ({ serveStatic, cache }) => {
     cache(CACHE_ASSETS)
@@ -34,11 +34,11 @@ export default new Router()
   })
 
   //////////////////////////////////////////////////////////
-  ////////// Static Prerendering examples       ////////////
+  ////////// Static Prerendering examples //////////////////
   //////////////////////////////////////////////////////////
   //
   // More details at:
-  // https://developer.moovweb.com/guides/static_prerendering
+  // https://docs.layer0.co/guides/static_prerendering
   // 
   // append this to the router call above before .fallback to enable
   // .prerender([
