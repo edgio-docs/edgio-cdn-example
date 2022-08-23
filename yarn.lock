@@ -418,10 +418,10 @@
     unixify "^1.0.0"
     uuid "^8.3.2"
 
-"@layer0/devtools@^4.2.3-next-1637272263-d46b7b091.0":
-  version "4.3.2"
-  resolved "https://registry.yarnpkg.com/@layer0/devtools/-/devtools-4.3.2.tgz#48ef3b945f52d27934c3cbda92d345f8e3c026fa"
-  integrity sha512-+oZuYWubRzT3y65GTnCls4CQMLctmVva5i4gmGl81J9+lwhfpbzouWPC84FeF1nfVnYGS6VIxgxbpv7llXy8Gw==
+"@layer0/devtools@^4.18.3":
+  version "4.18.3"
+  resolved "https://registry.yarnpkg.com/@layer0/devtools/-/devtools-4.18.3.tgz#03e61ae16ce2832826aef786ba8a38cbdb560f24"
+  integrity sha512-ifv7pP6A0NB+X9RzfSv4wpfgLTq32SgrV6q16Plj4zJOnGgW8O/wzXlbWSC18Jg0Vr7LK0y5BgVqtCn2FWazRw==
   dependencies:
     clsx "^1.1.1"
     lodash "^4.17.20"
