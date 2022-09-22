@@ -7,7 +7,7 @@
     "deploy": "npm run build && layer0 deploy --skip-build"
   },
   "devDependencies": {
-    "@layer0/cli": "^4.2.3-next-1637272263-d46b7b091.0",
+    "@layer0/cli": "^4.18.11",
     "@layer0/core": "^4.2.3-next-1637272263-d46b7b091.0",
     "@layer0/devtools": "^4.2.3-next-1637272263-d46b7b091.0",
     "@layer0/prefetch": "^4.2.3-next-1637272263-d46b7b091.0",
