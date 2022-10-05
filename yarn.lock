@@ -442,13 +442,13 @@
     workbox-routing "^5.1.2"
     workbox-strategies "^5.1.2"
 
-"@layer0/starter@^4.2.3-next-1637272263-d46b7b091.0":
-  version "4.3.2"
-  resolved "https://registry.yarnpkg.com/@layer0/starter/-/starter-4.3.2.tgz#d794c0a555011e3a388e140eb408743bb53888e8"
-  integrity sha512-YvYXV9xmMmgtp/0/lGDWq6oW7uhVTSz3luWfFA0Rgb8wMXCjwS5BW1hnSESmBDUD8OJ8xf1rkIscGNihJMEnEA==
+"@layer0/starter@^4.19.2":
+  version "4.19.2"
+  resolved "https://registry.yarnpkg.com/@layer0/starter/-/starter-4.19.2.tgz#24436f98a42189661525385a2bb447920c7f0ee1"
+  integrity sha512-UcIcpo3rG8YyyPbEiHY1MyqUi8JkSoInJp53fRU5akhGEWpsE6LSx8L6x6gXwl3MgfqQbCMrddly11NcabrF2A==
   dependencies:
     browserslist "^4.16.5"
-    chalk "^4.1.0"
+    chalk "^4.1.2"
     cheerio "^1.0.0-rc.5"
     esbuild "^0.11.15"
     esbuild-plugin-browserslist "^0.1.0"
@@ -837,7 +837,7 @@ chalk@^3.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-chalk@^4.1.0:
+chalk@^4.1.0, chalk@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.1.2.tgz#aac4e2b7734a740867aeb16bf02aad556a1e7a01"
   integrity sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==
