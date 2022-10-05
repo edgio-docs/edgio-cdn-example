@@ -10,7 +10,7 @@
     "@layer0/cli": "^4.2.3-next-1637272263-d46b7b091.0",
     "@layer0/core": "^4.2.3-next-1637272263-d46b7b091.0",
     "@layer0/devtools": "^4.2.3-next-1637272263-d46b7b091.0",
-    "@layer0/prefetch": "^4.2.3-next-1637272263-d46b7b091.0",
+    "@layer0/prefetch": "^4.19.2",
     "@layer0/starter": "^4.2.3-next-1637272263-d46b7b091.0",
     "@types/node": "^13.13.2",
     "prettier": "^2.4.1",
