@@ -8,13 +8,13 @@ A demo deployment of the CDN example to Layer0.
 
 ## Try It Now
 
-[![Deploy with Layer0](https://docs.layer0.co/button.svg)](https://app.layer0.co/deploy?repo=https://github.com/layer0-docs/layer0-cdn-example)
+[![Deploy with Layer0](https://docs.edg.io/button.svg)](https://app.layer0.co/deploy?repo=https://github.com/edgio-docs/edgio-cdn-example)
 
 ## Getting Started
 
 ### Clone This Repo
 
-Use `git clone https://github.com/layer0-docs/layer0-cdn-example.git` to get the files within this repository onto your local machine.
+Use `git clone https://github.com/edgio-docs/edgio-cdn-example.git` to get the files within this repository onto your local machine.
 
 ### Install dependencies
 
@@ -29,7 +29,7 @@ npm install
 Run the Next.js app with the command:
 
 ```bash
-npm run layer0:dev
+layer0 dev
 ```
 
 Load the site: http://127.0.0.1:3000
