@@ -1,5 +1,5 @@
-import install from '@layer0/prefetch/window/install'
-import installDevtools from '@layer0/devtools/install'
+import install from '@edgio/prefetch/window/install'
+import installDevtools from '@edgio/devtools/install'
 
 document.addEventListener('DOMContentLoaded', function () {
   installDevtools()

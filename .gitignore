@@ -1,5 +1,5 @@
-/.layer0
-/node_modules
-/dist
-/.yalc
-yalc.lock
+node_modules
+dist
+# Edgio generated build directory
+.edgio
+.layer0

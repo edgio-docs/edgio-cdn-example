@@ -1,6 +1,6 @@
 import { skipWaiting, clientsClaim } from 'workbox-core'
-import { Prefetcher, prefetch } from '@layer0/prefetch/sw'
-import DeepFetchPlugin, { DeepFetchCallbackParam } from '@layer0/prefetch/sw/DeepFetchPlugin'
+import { Prefetcher, prefetch } from '@edgio/prefetch/sw'
+import DeepFetchPlugin, { DeepFetchCallbackParam } from '@edgio/prefetch/sw/DeepFetchPlugin'
 
 skipWaiting()
 clientsClaim()
@@ -13,17 +13,18 @@ new Prefetcher({
         maxMatches: 1,
         attribute: 'src',
         as: 'image',
-        callback: deepFetchImages
+        callback: deepFetchImages,
       },
     ]),
   ],
 })
-.route()
-.cache(/^https:\/\/assets-global\.website-files\.com\/.*/) // Specific domain caching based on a regex match
+  .route()
+  // Specific domain caching based on a regex match
+  .cache(/^https:\/\/assets-global\.website-files\.com\/.*/)
 
 // Callback function image selector
 // Customize as needed
 function deepFetchImages({ $el }: DeepFetchCallbackParam) {
   const urlTemplate = $el.attr('src')
-  prefetch(url, 'image')
+  prefetch(urlTemplate, 'image')
 }
