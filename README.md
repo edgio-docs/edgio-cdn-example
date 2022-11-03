@@ -20,9 +20,7 @@ On the command line, in the project root directory, run the following command:
 npm install
 ```
 
-### Run the Next.js app locally on Edgio
-
-Run the Next.js app with the command:
+### Run locally on Edgio
 
 ```bash
 npm run edgio:dev
