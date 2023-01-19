@@ -8,11 +8,11 @@
     "format": "prettier --write '**/*' --ignore-unknown"
   },
   "devDependencies": {
-    "@edgio/cli": "^5.0.4",
-    "@edgio/core": "^5.0.4",
-    "@edgio/devtools": "^5.0.4",
-    "@edgio/prefetch": "^5.0.4",
-    "@edgio/starter": "^5.0.4",
+    "@edgio/cli": "^6.0.5",
+    "@edgio/core": "^6.0.5",
+    "@edgio/devtools": "^6.0.5",
+    "@edgio/prefetch": "^6.0.5",
+    "@edgio/starter": "^6.0.5",
     "@types/node": "^13.13.2",
     "prettier": "^2.4.1",
     "typescript": "^4.4.4"
@@ -21,5 +21,6 @@
     "semi": false,
     "printWidth": 150,
     "singleQuote": true
-  }
+  },
+  "repository": "git@github.com:edgio-docs/edgio-cdn-example.git"
 }
