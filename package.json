@@ -8,11 +8,11 @@
     "format": "prettier --write '**/*' --ignore-unknown"
   },
   "devDependencies": {
-    "@edgio/cli": "^6.1.2",
-    "@edgio/core": "^6.1.2",
-    "@edgio/devtools": "^6.1.2",
-    "@edgio/prefetch": "^6.1.2",
-    "@edgio/starter": "^6.1.2",
+    "@edgio/cli": "^6.1.3",
+    "@edgio/core": "^6.1.3",
+    "@edgio/devtools": "^6.1.3",
+    "@edgio/prefetch": "^6.1.3",
+    "@edgio/starter": "^6.1.3",
     "@types/node": "^13.13.2",
     "prettier": "^2.4.1",
     "typescript": "^4.4.4"
